@@ -13,7 +13,7 @@
   3 - non-negative
 */
 
-
+void sort(int list[], int n);
 int cmpfunc (const void * a, const void * b);
 void insertion_sort(int *, int);
 void radix_sort(int *, int);
@@ -76,6 +76,9 @@ int findLargestNum(int * array, int size){
 }
 
 
+
+  
+
  void insertion_sort(int * arr, int num)
  {
     int temp;
@@ -95,20 +98,22 @@ int findLargestNum(int * array, int size){
  }
 
   
-  
+  void sort(int list[], int n)
+{
   int type = 0;
-  int test = 1;
   int count_sort = 0;
+  int num = n;
+  int ind;
   
     int neg = 0;
     //Check if sorted
     for (ind = 0; ind < num; ind ++)
     {
-      if (ind != num - 1 && arr[ind] > arr[ind + 1] )
+      if (ind != num - 1 && list[ind] > list[ind + 1] )
       {
 	count_sort++;
       }
-	  if (arr[ind] < 0)
+	  if (list[ind] < 0)
 	    neg = 1;
     }
   
@@ -121,12 +126,14 @@ int findLargestNum(int * array, int size){
     
   
   if (type == 1)
-    insertion_sort(arr,num);
+    insertion_sort(list,num);
   else if (!neg) {
-      radix_sort(arr,num);
+      radix_sort(list,num);
     }
   else {
-    qsort(arr,num,sizeof(int),cmpfunc);}
+    qsort(list,num,sizeof(int),cmpfunc);}
+    
+}
   
  
 

@@ -13,7 +13,7 @@
   3 - non-negative
 */
 
-void sort(int list[], int n);
+
 int cmpfunc (const void * a, const void * b);
 void insertion_sort(int *, int);
 void radix_sort(int *, int);
@@ -101,9 +101,9 @@ int findLargestNum(int * array, int size){
   void sort(int list[], int n)
 {
   int type = 0;
-  int test = 1;
   int count_sort = 0;
   int num = n;
+  int ind;
   
     int neg = 0;
     //Check if sorted
