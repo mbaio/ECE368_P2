@@ -23,7 +23,7 @@
 
 
 #include <stdio.h>
-#include <string.h>
+#include string.h>
 #include <time.h>               //  The usual stdio.h, etc.
 
 void GenRandom(void);                        //  Generate a list of random nbrs.
