@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-#define SIZE 100000
+#define SIZE 1000000
 
 void sort(int list[], int n);
 
@@ -13,10 +13,10 @@ int main()
   int rando = 1;
   for (ind = 0; ind < SIZE; ind++)
   {
-   // list[ind] = rando * rand() % 2147483647; // random
-    //rando *= -1;
+   list[ind] = rando * rand() % 2147483647; // random
+   rando *= -1;
    
-  list[ind] = ind; // sorted 
+ // list[ind] = ind; // sorted 
     
   //list[ind] = SIZE - ind; //reverse sorted
     

@@ -1,0 +1,10 @@
+This project's purpose was to explore sorting algorithms and develop 
+your own that is a combination or modification of existing ones to 
+come up with the fastest way to sort a random combination of types of 
+integer arrays.
+
+My implementation uses a combination of Radix, insertion, and qsort 
+depending on how the array is structured.  My algorithm does a quick
+check in the beginning to see if insertion would be viable.
+
+
